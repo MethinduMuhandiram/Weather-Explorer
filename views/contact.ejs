@@ -1,0 +1,21 @@
+<%- include('header'); -%>
+
+<body>
+  <section class="signup-section">
+    <div class="container-fluid">
+      <h3> Contact Me</h3>
+      <p>📱 +94716956535</p>
+      <p>📧 methindupm@gmail.com</p>
+      <form class="form-signin" action="/signUp" method="post">
+        <h1 class="h3 mb-3 font-weight-normal">Sign-up to my Mailing List</h1>
+
+        <input type="text" name="fName" class="form-control top" placeholder="First Name" required autocomplete="off">
+        <input type="text" name="sName" class="form-control middle" placeholder="Last Name" required autocomplete="off">
+        <input type="email" name="email" class="form-control bottom" placeholder="Email address" required autocomplete="off">
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+  <%- include('footer'); -%>

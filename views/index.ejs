@@ -1,0 +1,115 @@
+<%- include('header'); -%>
+
+<body>
+
+ <section class="search-section" id="home">
+
+   <div class="container-fluid">
+     <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+       <a class="navbar-brand" href="">Weather Explorer</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ml-auto">
+           <li class="nav-item">
+             <a class="nav-link" href="#home">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#terms-of-use">Terms of Use</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#sign-up">Contact</a>
+           </li>
+         </ul>
+       </div>
+     </nav>
+
+     <div class="search-box" id="search-box">
+       <form class="form-inline" action="/" method="post">
+         <div class="form-group mb-2">
+           <input class="form-control" type="text" name="search" placeholder="Search City" autocomplete="off" autofocus>
+           <button type="submit" class="btn btn-pri"><i class="fa fa-search"></i></button>
+
+       </form>
+     </div>
+
+   </div>
+
+ </section>
+
+<!-- ==================================Favorite Cities================================================================================ -->
+
+ <section class="favorite-cities" id="favorite-cities">
+
+
+
+   <div class="row">
+     <div class="favorite-cities-col col-lg-4 col-md-6">
+       <div class="card">
+         <div class="card-body">
+           <h3 class="favorite-cities-text">Colombo</h3>
+           <h2 class="temp1">28.97<span>&#8451;</span></h2>
+           <img class="weather-icon1" src="images/favicon-32x32.png" alt="">
+           <p class="weather-description1">Overcast clouds</p>
+         </div>
+       </div>
+     </div>
+
+
+     <div class="favorite-cities-col col-lg-4 col-md-6">
+       <div class="card">
+         <div class="card-body">
+           <h3 class="favorite-cities-text">Tokyo</h3>
+           <h2 class="temp2">21.79<span>&#8451;</span></h2>
+           <img class="weather-icon2" src="images/favicon-32x32.png">
+           <p class="weather-description2">Broken clouds</p>
+         </div>
+       </div>
+     </div>
+
+     <div class="favorite-cities-col col-lg-4 col-md-12">
+       <div class="card">
+         <div class="card-body">
+           <h2 class="favorite-cities-text">London</h2>
+           <h2 class="temp3">19.51<span>&#8451;</span></h2>
+           <img class="weather-icon3" src="images/favicon-32x32.png">
+           <p class="weather-description3">Scattered clouds</p>
+         </div>
+       </div>
+     </div>
+   </div>
+
+ </section>
+<!-- ================================================Terms of Use======================================================================= -->
+
+<section class="terms-of-use" id="terms-of-use">
+ <div class="container-fluid">
+   <h2 class="big heading">Termes of Use.</h2>
+   <p>Please Enter any City name inside the Search bar and click the search sign.</p> <br>
+    <p>This project is not fully completed. Please give your valuable suggestions, recommendations and feedbacks for the improvement of this web application </p>
+
+      <button type="button" class="download-btn btn btn-dark btn-lg"><a href="www.google.com"></a><i class="fab fa-apple "></i>Download</button>
+      <button type="button" class="download-btn btn btn-light btn-lg"><i class="fab fa-google-play "></i>Download</button>
+ </div>
+</section>
+<!-- =========================================================================================================================================== -->
+
+<section class="signup-section" id="sign-up">
+  <div class="container-fluid">
+    <h3> Contact Me</h3>
+    <p>📱 +94716956535</p>
+    <p>📧 methindupm@gmail.com</p>
+    <form class="form-signin" action="/signUp" method="post">
+      <h1 class="h3 mb-3 font-weight-normal">Sign-up to my Mailing List</h1>
+
+      <input type="text" name="fName" class="form-control top" placeholder="First Name" required autofocus autocomplete="off">
+      <input type="text" name="sName" class="form-control middle" placeholder="Last Name" required autocomplete="off">
+      <input type="email" name="email" class="form-control bottom" placeholder="Email address" required autocomplete="off">
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+    </form>
+  </div>
+</section>
+
+<%- include('footer'); -%>

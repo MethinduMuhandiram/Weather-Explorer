@@ -1,0 +1,21 @@
+<%- include('header'); -%>
+
+<body>
+
+  <div class="">
+    <div class="container">
+      <h1 class="display-4"><%= searchCity %></h1>
+      <h1 class="display-3"><%= temp %><span>&#8451;</span></h1>
+      <img src="<%= imageUrl %>">
+      <h2 class="display-5"><%= weatherDescription %></h2>
+
+      <form action="/success" method="post">
+        <button class="btn btn-lg btn-success" type="submit" name="button">Go Back To Home Page.</button>
+      </form>
+
+
+    </div>
+  </div>
+</body>
+
+<%- include('footer'); -%>
